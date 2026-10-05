@@ -1,0 +1,26 @@
+:root{
+ --ink:#29243b;--muted:#746d80;--purple:#8068d2;--pink:#ffe1eb;--lav:#e5e0ff;--mint:#d9f4eb;
+ --shadow:0 10px 28px rgba(73,57,107,.10)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:linear-gradient(#fff7fc,#f9f7ff,#f2fffb);color:var(--ink)}
+button,input{font:inherit}
+.app{max-width:620px;margin:auto;min-height:100vh;padding:calc(20px + env(safe-area-inset-top)) 15px calc(70px + env(safe-area-inset-bottom))}
+.screen{display:none}.screen.active{display:block}
+.brand{text-align:center;margin:6px 0 18px}.logo{font-size:40px;font-weight:900;background:linear-gradient(90deg,#ed75aa,#8068d1,#36ae92);-webkit-background-clip:text;color:transparent}.tagline{color:#777080;font-size:14px}
+.hero,.summary{background:#fff;padding:18px;border-radius:25px;box-shadow:var(--shadow);margin-bottom:14px}.hero h1,.hero h2,.summary h2{margin:0 0 6px}.hero p,.summary p{margin:0;color:var(--muted);line-height:1.5;font-size:14px}
+.category{border-radius:25px;margin:12px 0;box-shadow:var(--shadow);overflow:hidden}.category.body{background:var(--pink)}.category.thought{background:var(--lav)}.category.mind{background:var(--mint)}
+.categoryHead{width:100%;border:0;background:transparent;padding:20px;text-align:right;position:relative;color:var(--ink)}.categoryHead h2{margin:0 0 4px;font-size:23px}.categoryHead p{margin:0;color:#5d5666;font-size:14px}.badge{position:absolute;left:16px;top:17px;background:#ffffffcc;border-radius:999px;padding:5px 9px;font-size:12px;font-weight:800}
+.categoryBody{display:none;background:#fffafd;padding:14px}.category.open .categoryBody{display:block}
+.hint{font-size:13.5px;color:var(--muted);line-height:1.5;margin:0 3px 12px}.warning{display:none;background:#fff0f4;color:#98425e;border-radius:13px;padding:10px;margin:7px 0;font-size:13px;font-weight:700}.warning.show{display:block}
+.ritualChoice{display:block;position:relative;margin:9px 0}.ritualChoice input{position:absolute;right:15px;top:17px;width:22px;height:22px;accent-color:#866cd0}.choiceCard{background:#fff;border:2px solid #eee9f0;border-radius:19px;padding:14px 48px 14px 13px}.ritualChoice input:checked+.choiceCard{border-color:#8c73d7;background:#faf7ff}.choiceCard b{display:block;margin-bottom:4px}.choiceCard span{font-size:13.5px;color:var(--muted);line-height:1.45}
+.addArea{border-top:1px solid #eee8f0;margin-top:15px;padding-top:14px}.addArea summary{font-weight:800;cursor:pointer}.addFields{display:grid;gap:8px;margin-top:10px}.addFields input{width:100%;border:1px solid #d9d2e1;border-radius:13px;padding:11px;background:#fff}.secondary{border:0;background:#eee9f8;color:#584587;border-radius:14px;padding:12px;font-weight:800}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}.pill{background:#f1edf6;border-radius:999px;padding:7px 10px;font-size:12px}
+.primary{width:100%;border:0;background:linear-gradient(90deg,#8068d2,#b36fc8);color:#fff;border-radius:19px;padding:16px;font-weight:900;font-size:17px;margin-top:14px;box-shadow:0 10px 25px rgba(118,88,173,.23)}.primary:disabled{background:#c8c4cf;box-shadow:none;opacity:.72}
+.footnote{font-size:11.5px;color:#8a8390;line-height:1.45;margin:14px 4px}
+.topbar{display:flex;align-items:center;gap:10px;margin-bottom:15px}.topbar h1{margin:0}.round{border:0;background:#eee9f3;width:42px;height:42px;border-radius:50%;font-size:24px}
+.ritualRun{background:#fff;border-radius:22px;padding:16px;margin:11px 0;box-shadow:0 8px 22px rgba(73,57,107,.08);display:flex;gap:12px;align-items:flex-start}.ritualRun.done{opacity:.58}.ritualRun.done h3{text-decoration:line-through}.ritualRun .emoji{font-size:30px}.ritualRun h3{margin:1px 0 5px}.ritualRun p{margin:0;color:var(--muted);font-size:13.5px;line-height:1.45}.ritualRun label{display:block;margin-top:10px;font-weight:800;color:#7159b2}.ritualRun input{width:21px;height:21px;vertical-align:middle;accent-color:#8068d2}
+.final{text-align:center;padding-top:12vh;position:relative}.final-graphic{font-size:66px}.final h1{font-size:30px;line-height:1.25;margin:12px auto;max-width:450px}.final p{color:var(--muted)}
+.spark{position:fixed;top:-30px;z-index:30;pointer-events:none;color:#ff6fb1;animation:fall linear forwards}@keyframes fall{0%{transform:translateY(-10vh) rotate(0);opacity:0}15%{opacity:1}100%{transform:translateY(115vh) rotate(500deg);opacity:.12}}
+@media (prefers-reduced-motion:reduce){.spark{animation:none;display:none}}

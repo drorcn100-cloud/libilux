@@ -1,0 +1,11 @@
+{
+  "name": "ליבילוקס",
+  "short_name": "ליבילוקס",
+  "lang": "he",
+  "dir": "rtl",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#fff7fc",
+  "theme_color": "#9a73d8",
+  "description": "טקסים אישיים לרוגע, אומץ ופוקוס"
+}

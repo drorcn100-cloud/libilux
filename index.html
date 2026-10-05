@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#9a73d8">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="ליבילוקס">
+  <title>ליבילוקס ✨</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main class="app">
+  <section id="home" class="screen active">
+    <header class="brand">
+      <div class="logo">ליבילוקס ✨</div>
+      <div class="tagline">בוחרת • מחברת • מתרגלת</div>
+    </header>
+
+    <section class="hero">
+      <h1>בני את הטקס שלך להיום 💫</h1>
+      <p>בכל קטגוריה בחרי <b>ריטואל אחד או שניים</b>. בסוף ייווצר טקס אישי של 3–6 ריטואלים.</p>
+    </section>
+
+    <div id="categories"></div>
+
+    <section class="summary">
+      <h2>🌟 הטקס שלי להיום</h2>
+      <p id="status">בחרי לפחות ריטואל אחד מכל קטגוריה.</p>
+      <div id="selectedPills" class="pills"></div>
+      <button id="playBtn" class="primary" disabled>▶ Play — צרי את הטקס שלי</button>
+    </section>
+
+    <p class="footnote">ליבילוקס היא ארגז כלים לתרגול. המטרה אינה להעלים כל לחץ, אלא לעזור להמשיך גם כשהוא קיים.</p>
+  </section>
+
+  <section id="ceremony" class="screen">
+    <div class="topbar">
+      <button id="backBtn" class="round" aria-label="חזרה">‹</button>
+      <h1>הטקס שלי ✨</h1>
+    </div>
+    <section class="hero">
+      <h2>קדימה, אחד־אחד 💜</h2>
+      <p>בצעי כל ריטואל וסמני <b>ביצעתי ✓</b>. כשתסיימי את כולם ייפתח כפתור הסיום.</p>
+    </section>
+    <div id="ceremonyList"></div>
+    <button id="finishBtn" class="primary" disabled>✨ סיימתי את כל הטקס</button>
+  </section>
+
+  <section id="final" class="screen final">
+    <div id="sparkles" aria-hidden="true"></div>
+    <div class="final-graphic">🌸✨🌸</div>
+    <h1>כל הכבוד!<br>את מוכנה לצאת לדרך רגועה ושמחה 💗</h1>
+    <p>לקחת איתך את הכלים שלך. עכשיו אפשר פשוט לצאת לדרך.</p>
+    <button id="againBtn" class="primary">חזרה לליבילוקס</button>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
